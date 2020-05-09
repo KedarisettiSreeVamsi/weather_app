@@ -35,7 +35,13 @@ class _LoadingState extends State<Loading> {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: Center(
-          child: SpinKitThreeBounce(size:25,color:Colors.black),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image(image: AssetImage('weather_icons/weather.png'),),
+              SpinKitThreeBounce(size:25,color:Colors.black),
+            ],
+          ),
         ),
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 import 'package:worldtime_app2/services/weather.dart';
 
 class ChooseLocation extends StatefulWidget {
@@ -67,8 +66,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
       'desc' : x1.desc,
     });
   }
-
-
   String loc;
   @override
   Widget build(BuildContext context) {
@@ -91,7 +88,8 @@ class _ChooseLocationState extends State<ChooseLocation> {
         ],
         backgroundColor: Colors.blue,
       ),
-      body: ListView.builder(itemBuilder: (context,index){
+      body: ListView.builder(
+        itemBuilder: (context,index){
         return Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: Card(
